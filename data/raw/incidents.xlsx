@@ -1,0 +1,4 @@
+incident_id;incident_type;severity;start_date;end_date;station
+1;Signal Failure;HIGH;2026-09-01 07:35:00;2026-09-01 08:10:00;Gare du Nord
+2;Train Delay;MEDIUM;2026-09-02 09:10:00;2026-09-02 09:40:00;Bastille
+3;Technical Issue;LOW;2026-09-03 11:00:00;2026-09-03 11:25:00;Nation

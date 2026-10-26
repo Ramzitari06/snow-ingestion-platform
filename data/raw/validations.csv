@@ -1,0 +1,6 @@
+validation_id;customer_id;station;line;validation_datetime
+1;501;Gare du Nord;4;2026-09-01 08:15:00
+2;502;Chatelet;1;2026-09-01 08:16:00
+3;503;Bastille;5;2026-09-01 08:20:00
+4;501;Nation;9;2026-09-01 18:10:00
+5;505;Republique;3;2026-09-01 08:45:00
