@@ -1,46 +1,116 @@
-"""Point d'entree de l'application Snow Ingestion Platform."""
+"""Point d'entrée de l'application Snow Ingestion Platform."""
+
+import logging
 import pandas as pd
 from fastapi import FastAPI
+from app.config.logger_config import logger_config
+
 from app.connectors.snowflake_connector import get_connection
+from app.services.file_load import load_csv
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI()
 
-@app.get("/customers")
 
+@app.get("/customers")
 def get_customers():
 
-    df = pd.read_csv("data/raw/customers.csv")
+    try:
+    
+        df = load_csv("data/raw/customers.csv")
+        logger.info(
+                    "Fichier customers.csv chargé avec succès. %s lignes trouvées.",
+                    len(df)
+                )
+        return df.to_dict(orient="records")
 
-    return df.to_dict(orient="records")
+    except FileNotFoundError:
+        logger.error("Le fichier customers.csv est introuvable.")
+        return {"error": "Fichier customers.csv introuvable"}
+
+    except Exception as e:
+        logger.exception(
+                "Erreur lors de la lecture du fichier customers.csv"
+                        )
+        return {"error": str(e)}
+
 
 @app.get("/validations")
 def get_validations():
 
-    df = pd.read_csv("data/raw/validations.csv")
+    try:
+        df = load_csv("data/raw/validations.csv")
+        logger.info(
+            "Fichier validations.csv chargé avec succès. %s lignes trouvées.",
+            len(df)
+        )
 
-    return df.to_dict(orient="records")
+        return df.to_dict(orient="records")
 
+    except FileNotFoundError:
+        logger.error("Le fichier validations.csv est introuvable.")
+        return {"error": "Fichier validations.csv introuvable"}
+
+    except Exception as e:
+        logger.exception(
+            "Erreur lors de la lecture du fichier validations.csv"
+        )
+        return {"error": str(e)}
 
 
 @app.get("/snowflake/test")
 def test_connection():
 
-    conn = get_connection()
+    logger.info("Début du test de connexion Snowflake.")
 
-    cursor = conn.cursor()
+    conn = None
+    cursor = None
 
-    cursor.execute("SELECT CURRENT_VERSION()")
+    try:
 
-    result = cursor.fetchone()
+        conn = get_connection()
+        logger.info("Connexion Snowflake établie.")
 
-    cursor.close()
-    conn.close()
+        cursor = conn.cursor()
 
-    return {"snowflake_version": result[0]}
-'''
-@app.get("/read/{source_file}")
-def read_file(source_file: str):
+        cursor.execute("SELECT CURRENT_VERSION()")
 
-    df = pd.read_csv(f"data/raw/{source_file}.csv")
+        result = cursor.fetchone()
 
-    return df.to_dict(orient="records") '''
+        logger.info(
+            "Version Snowflake récupérée : %s",
+            result[0]
+        )
+
+        return {
+            "status": "SUCCESS",
+            "snowflake_version": result[0]
+        }
+
+    except Exception as e:
+
+        logger.error(
+            "Erreur lors du test de connexion Snowflake : %s",
+            str(e)
+        )
+
+        return {
+            "status": "ERROR",
+            "message": str(e)
+        }
+
+    finally:
+
+        if cursor:
+            cursor.close()
+
+        if conn:
+            conn.close()
+
+       
