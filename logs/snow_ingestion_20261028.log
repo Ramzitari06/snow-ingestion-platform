@@ -1,0 +1,131 @@
+2026-10-28 21:39:39,070 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:39:39,230 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:39:39,243 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:39:39,247 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:39:39,248 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:39:39,250 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:39:54,707 | INFO | app.services.file_load | Lecture du fichier data/raw/customers.csv
+2026-10-28 21:39:54,747 | INFO | app.services.file_load | Fichier data/raw/customers.csv chargé avec succès : 5 lignes
+2026-10-28 21:39:54,748 | INFO | app.main | Fichier customers.csv chargé avec succès. 5 lignes trouvées.
+2026-10-28 21:44:56,575 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:44:56,663 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:44:56,668 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:44:56,671 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:44:56,673 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:44:56,673 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:47:23,143 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-10-28 21:47:23,150 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-10-28 21:47:23,152 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://nlvpqaa-np17357.snowflakecomputing.com/session/v1/login-request
+2026-10-28 21:47:23,157 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-10-28 21:47:23,174 | INFO | snowflake.connector._core | outbound HTTP call method=PUT host=169.254.169.254 path=/latest/api/token
+2026-10-28 21:47:24,926 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=335153479151734 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.39.101
+2026-10-28 21:47:24,970 | INFO | snowflake.connector._core | Executing sync query request_id=8c51f61c-0a9f-475a-8e8c-8ffa1d95c5b4
+2026-10-28 21:47:24,971 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:47:25,114 | INFO | snowflake.connector._core | Closing connection
+2026-10-28 21:47:25,115 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-10-28 21:47:25,169 | INFO | snowflake.connector._core | Initiating session logout
+2026-10-28 21:47:25,170 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-10-28 21:47:25,224 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-10-28 21:47:25,225 | INFO | snowflake.connector._core | Logout completed successfully
+2026-10-28 21:47:25,225 | INFO | snowflake.connector._core | Connection closed successfully
+2026-10-28 21:51:32,720 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:51:32,819 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:51:32,830 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:51:32,833 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:51:32,835 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:51:32,837 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:51:42,895 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:51:43,071 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:51:43,082 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:51:43,129 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:51:43,138 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:51:43,153 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:54:01,448 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:54:01,511 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:54:01,519 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:54:01,523 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:54:01,524 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:54:01,524 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:54:08,866 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-10-28 21:54:08,868 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-10-28 21:54:08,869 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://nlvpqaa-np17357.snowflakecomputing.com/session/v1/login-request
+2026-10-28 21:54:08,870 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-10-28 21:54:08,873 | INFO | snowflake.connector._core | outbound HTTP call method=PUT host=169.254.169.254 path=/latest/api/token
+2026-10-28 21:54:10,578 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=335153479139406 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.39.101
+2026-10-28 21:54:10,596 | INFO | snowflake.connector._core | Executing sync query request_id=0f4c941c-9425-4645-9417-b4d56837d344
+2026-10-28 21:54:10,596 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:54:10,704 | INFO | snowflake.connector._core | Closing connection
+2026-10-28 21:54:10,705 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-10-28 21:54:10,745 | INFO | snowflake.connector._core | Initiating session logout
+2026-10-28 21:54:10,746 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-10-28 21:54:10,795 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-10-28 21:54:10,796 | INFO | snowflake.connector._core | Logout completed successfully
+2026-10-28 21:54:10,797 | INFO | snowflake.connector._core | Connection closed successfully
+2026-10-28 21:56:49,074 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:56:49,136 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:56:49,150 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:56:49,156 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:56:49,158 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:56:49,161 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:57:03,654 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 21:57:03,771 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 21:57:03,780 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 21:57:03,783 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 21:57:03,784 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 21:57:03,784 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 21:57:16,054 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-10-28 21:57:16,055 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-10-28 21:57:16,057 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://nlvpqaa-np17357.snowflakecomputing.com/session/v1/login-request
+2026-10-28 21:57:16,059 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-10-28 21:57:16,064 | INFO | snowflake.connector._core | outbound HTTP call method=PUT host=169.254.169.254 path=/latest/api/token
+2026-10-28 21:57:17,692 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=335153479135310 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.39.101
+2026-10-28 21:57:17,748 | INFO | snowflake.connector._core | Executing sync query request_id=99ce3eed-2a82-4456-a1bb-705f3b772ade
+2026-10-28 21:57:17,749 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:18,551 | INFO | snowflake.connector._core | Executing sync query request_id=d3c874af-1455-4275-b70f-5a452e41c2de
+2026-10-28 21:57:18,553 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:19,108 | INFO | snowflake.connector._core | Executing sync query request_id=52fbe550-9e65-49ed-be33-2b6a1adf04f4
+2026-10-28 21:57:19,108 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:19,677 | INFO | snowflake.connector._core | Executing sync query request_id=e234d767-c8f3-4e3b-aa5e-785a38e7148e
+2026-10-28 21:57:19,677 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:20,018 | INFO | snowflake.connector._core | Executing sync query request_id=ef007be7-858d-4fe5-b4cd-6764ebe026e6
+2026-10-28 21:57:20,019 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:20,422 | INFO | snowflake.connector._core | Executing sync query request_id=22c89892-3456-4ca9-a26c-cd2288663211
+2026-10-28 21:57:20,422 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 21:57:20,950 | INFO | snowflake.connector._core | Closing connection
+2026-10-28 21:57:20,951 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-10-28 21:57:20,998 | INFO | snowflake.connector._core | Initiating session logout
+2026-10-28 21:57:21,000 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-10-28 21:57:21,046 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-10-28 21:57:21,047 | INFO | snowflake.connector._core | Logout completed successfully
+2026-10-28 21:57:21,047 | INFO | snowflake.connector._core | Connection closed successfully
+2026-10-28 22:03:48,747 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-10-28 22:03:48,854 | INFO | snowflake.connector._common.extras | pyarrow is not installed; pyarrow-based features will be unavailable
+2026-10-28 22:03:48,860 | INFO | snowflake.connector._common.extras | pandas is installed (version: 3.1.0)
+2026-10-28 22:03:48,863 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-10-28 22:03:48,864 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-10-28 22:03:48,865 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-10-28 22:04:22,486 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-10-28 22:04:22,488 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-10-28 22:04:22,488 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://nlvpqaa-np17357.snowflakecomputing.com/session/v1/login-request
+2026-10-28 22:04:22,489 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-10-28 22:04:22,491 | INFO | snowflake.connector._core | outbound HTTP call method=PUT host=169.254.169.254 path=/latest/api/token
+2026-10-28 22:04:24,039 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=335153479180378 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.39.101
+2026-10-28 22:04:24,057 | INFO | snowflake.connector._core | Executing sync query request_id=2b84520a-2386-4478-804d-70560420386d
+2026-10-28 22:04:24,057 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:24,455 | INFO | snowflake.connector._core | Executing sync query request_id=5ff808bc-c2e1-4b01-9486-7951f954ae06
+2026-10-28 22:04:24,456 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:25,109 | INFO | snowflake.connector._core | Executing sync query request_id=68a3335c-05b2-4394-9d2c-983031d7cef4
+2026-10-28 22:04:25,110 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:25,485 | INFO | snowflake.connector._core | Executing sync query request_id=c6d0bcfb-b44a-4df6-80ef-cc1ad85b422b
+2026-10-28 22:04:25,486 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:25,882 | INFO | snowflake.connector._core | Executing sync query request_id=2ae5a373-ec58-48b5-94ea-17d829f64db7
+2026-10-28 22:04:25,883 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:26,228 | INFO | snowflake.connector._core | Executing sync query request_id=489db524-7baf-44d5-b4a5-1d89d8810d04
+2026-10-28 22:04:26,229 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-10-28 22:04:26,293 | INFO | snowflake.connector._core | Closing connection
+2026-10-28 22:04:26,294 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-10-28 22:04:26,333 | INFO | snowflake.connector._core | Initiating session logout
+2026-10-28 22:04:26,334 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-10-28 22:04:26,379 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-10-28 22:04:26,379 | INFO | snowflake.connector._core | Logout completed successfully
+2026-10-28 22:04:26,380 | INFO | snowflake.connector._core | Connection closed successfully

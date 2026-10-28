@@ -4,6 +4,7 @@ import logging
 import pandas as pd
 from fastapi import FastAPI
 from app.config.logger_config import logger_config
+from app.services.load_data import load_dataframe
 
 from app.connectors.snowflake_connector import get_connection
 from app.services.file_load import load_csv
@@ -112,5 +113,31 @@ def test_connection():
 
         if conn:
             conn.close()
+
+@app.post("/load/customers")
+def load_customers():
+    df = pd.read_csv("data/raw/customers.csv" , delimiter=";")
+    load_dataframe(
+        df=df,
+        table_name="CUSTOMERS"
+    )
+
+    return {
+        "status": "success",
+        "rows_loaded": len(df)
+    }
+
+@app.post("/load/validations")
+def load_validations():
+    df = pd.read_csv("data/raw/validations.csv" , delimiter=";")
+    load_dataframe(
+        df=df,
+        table_name="VALIDATIONS"
+    )
+
+    return {
+        "status": "success",
+        "rows_loaded": len(df)
+    }
 
        
