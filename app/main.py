@@ -5,6 +5,7 @@ import pandas as pd
 from fastapi import FastAPI
 from app.config.logger_config import logger_config
 from app.services.load_data import load_dataframe
+from app.services.Config_BDD import execute_ddl
 
 from app.connectors.snowflake_connector import get_connection
 from app.services.file_load import load_csv
@@ -116,28 +117,117 @@ def test_connection():
 
 @app.post("/load/customers")
 def load_customers():
-    df = pd.read_csv("data/raw/customers.csv" , delimiter=";")
-    load_dataframe(
-        df=df,
-        table_name="CUSTOMERS"
+
+    logger.info(
+        "Début du chargement des données de customers dans Snowflake."
     )
 
-    return {
-        "status": "success",
-        "rows_loaded": len(df)
-    }
+    try:
+
+        df = pd.read_csv(
+            "data/raw/customers.csv",
+            delimiter=";"
+        )
+
+        logger.info(
+            "Fichier lu avec succès. %s lignes détectées.",
+            len(df)
+        )
+
+        if df.empty:
+            logger.warning(
+                "Le fichier customers.csv est vide."
+            )
+
+            return {
+                "status": "warning",
+                "message": "Fichier vide"
+            }
+
+        load_dataframe(
+            df=df,
+            table_name="CUSTOMERS",
+            
+        )
+
+        logger.info(
+            "Chargement terminé avec succès. %s lignes chargées.",
+            len(df)
+        )
+
+        return {
+            "status": "success",
+            "rows_loaded": len(df)
+        }
+
+    except Exception as e:
+
+        logger.error(
+            "Erreur lors du chargement de CUSTOMERS : %s",
+            str(e)
+        )
+
+        raise
 
 @app.post("/load/validations")
 def load_validations():
-    df = pd.read_csv("data/raw/validations.csv" , delimiter=";")
-    load_dataframe(
-        df=df,
-        table_name="VALIDATIONS"
+
+    logger.info(
+        "Début du chargement des données de validations dans Snowflake."
     )
 
-    return {
-        "status": "success",
-        "rows_loaded": len(df)
-    }
+    try:
 
-       
+        df = pd.read_csv(
+            "data/raw/validations.csv",
+            delimiter=";"
+        )
+
+        logger.info(
+            "Fichier lu avec succès. %s lignes détectées.",
+            len(df)
+        )
+
+        if df.empty:
+            logger.warning(
+                "Le fichier validations.csv est vide."
+            )
+
+            return {
+                "status": "warning",
+                "message": "Fichier vide"
+            }
+
+        load_dataframe(
+            df=df,
+            table_name="VALIDATIONS",
+        )
+
+        logger.info(
+            "Chargement terminé avec succès. %s lignes chargées.",
+            len(df)
+        )
+
+        return {
+            "status": "success",
+            "rows_loaded": len(df)
+        }
+
+    except Exception as e:
+
+        logger.error(
+            "Erreur lors du chargement de VALIDATIONS : %s",
+            str(e)
+        )
+
+        raise
+
+@app.post("/setup")
+def setup_environment():
+
+    execute_ddl()
+
+    return {
+        "status": "SUCCESS",
+        "message": "Database and tables created"
+    }
