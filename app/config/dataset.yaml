@@ -1,0 +1,22 @@
+datasets:
+
+  customers:
+    file_path: data/raw/customers.csv
+    staging_table: STG_CUSTOMERS
+    target_table: CUSTOMERS
+    primary_key: CUSTOMER_ID
+
+  validations:
+    file_path: data/raw/validations.csv
+    staging_table: STG_VALIDATIONS
+    target_table: VALIDATIONS
+    primary_key: VALIDATION_ID
+
+  Load_history:
+    target_table: LOAD_HISTORY
+    primary_key: LOAD_ID
+
+Script:
+
+  sql :
+    file_path: app/services/ddl.sql

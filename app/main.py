@@ -1,6 +1,7 @@
 """Point d'entrée de l'application Snow Ingestion Platform."""
 
 import logging
+from logging import config
 import pandas as pd
 from fastapi import FastAPI
 from app.config.logger_config import logger_config
@@ -8,7 +9,14 @@ from app.services.load_data import load_dataframe
 from app.services.Config_BDD import execute_ddl
 
 from app.connectors.snowflake_connector import get_connection
-from app.services.file_load import load_csv
+from app.services.file_load import load_csv , truncate_table , merge_customers , merge_validations, save_load_history
+from app.config.ParamLoad import paramLoad
+
+
+
+
+
+confige = paramLoad() ;
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,9 +31,10 @@ app = FastAPI()
 @app.get("/customers")
 def get_customers():
 
+    param = confige["datasets"]["customers"] ;
     try:
     
-        df = load_csv("data/raw/customers.csv")
+        df = load_csv(param["file_path"])
         logger.info(
                     "Fichier customers.csv chargé avec succès. %s lignes trouvées.",
                     len(df)
@@ -45,9 +54,9 @@ def get_customers():
 
 @app.get("/validations")
 def get_validations():
-
+    param = confige["datasets"]["validations"] ;
     try:
-        df = load_csv("data/raw/validations.csv")
+        df = load_csv(param["file_path"])
         logger.info(
             "Fichier validations.csv chargé avec succès. %s lignes trouvées.",
             len(df)
@@ -118,6 +127,8 @@ def test_connection():
 @app.post("/load/customers")
 def load_customers():
 
+    param = confige["datasets"]["customers"]
+
     logger.info(
         "Début du chargement des données de customers dans Snowflake."
     )
@@ -125,7 +136,7 @@ def load_customers():
     try:
 
         df = pd.read_csv(
-            "data/raw/customers.csv",
+            param["file_path"],
             delimiter=";"
         )
 
@@ -135,8 +146,20 @@ def load_customers():
         )
 
         if df.empty:
+
             logger.warning(
                 "Le fichier customers.csv est vide."
+            )
+
+            save_load_history(
+                "customers",
+                param["staging_table"],
+                param["target_table"],
+                0,
+                "WARNING",
+                "Fichier vide",
+                None,
+                None
             )
 
             return {
@@ -144,10 +167,24 @@ def load_customers():
                 "message": "Fichier vide"
             }
 
+        truncate_table(param["staging_table"])
+
         load_dataframe(
             df=df,
-            table_name="CUSTOMERS",
-            
+            table_name=param["staging_table"]
+        )
+
+        merge_customers()
+
+        save_load_history(
+            "customers",
+            param["staging_table"],
+            param["target_table"],
+            len(df),
+            "SUCCESS",
+            None,
+            None,
+            None
         )
 
         logger.info(
@@ -167,10 +204,23 @@ def load_customers():
             str(e)
         )
 
+        save_load_history(
+            "customers",
+            param["staging_table"],
+            param["target_table"],
+            0,
+            "FAILED",
+            str(e),
+            None,
+            None
+        )
+
         raise
 
 @app.post("/load/validations")
 def load_validations():
+
+    param = confige["datasets"]["validations"]
 
     logger.info(
         "Début du chargement des données de validations dans Snowflake."
@@ -179,7 +229,7 @@ def load_validations():
     try:
 
         df = pd.read_csv(
-            "data/raw/validations.csv",
+            param["file_path"],
             delimiter=";"
         )
 
@@ -189,8 +239,20 @@ def load_validations():
         )
 
         if df.empty:
+
             logger.warning(
                 "Le fichier validations.csv est vide."
+            )
+
+            save_load_history(
+                "validations",
+                param["staging_table"],
+                param["target_table"],
+                0,
+                "WARNING",
+                "Fichier vide",
+                None,
+                None
             )
 
             return {
@@ -198,9 +260,26 @@ def load_validations():
                 "message": "Fichier vide"
             }
 
+        truncate_table(
+            param["staging_table"]
+        )
+
         load_dataframe(
             df=df,
-            table_name="VALIDATIONS",
+            table_name=param["staging_table"]
+        )
+
+        merge_validations()
+
+        save_load_history(
+            "validations",
+            param["staging_table"],
+            param["target_table"],
+            len(df),
+            "SUCCESS",
+            None,
+            None,
+            None
         )
 
         logger.info(
@@ -220,14 +299,36 @@ def load_validations():
             str(e)
         )
 
-        raise
+        save_load_history(
+            "validations",
+            param["staging_table"],
+            param["target_table"],
+            0,
+            "FAILED",
+            str(e),
+            None,
+            None
+        )
 
+        raise
+   
 @app.post("/setup")
 def setup_environment():
 
-    execute_ddl()
+    try:
 
-    return {
-        "status": "SUCCESS",
-        "message": "Database and tables created"
-    }
+        execute_ddl()
+
+        return {
+            "status": "SUCCESS",
+            "message": "Environnement Snowflake créé avec succès"
+        }
+
+    except Exception as e:
+
+        logger.error(str(e))
+
+        return {
+            "status": "FAILED",
+            "message": str(e)
+        }

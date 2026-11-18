@@ -1,14 +1,21 @@
 from app.connectors.snowflake_connector import get_connection
+import logging
+from app.config.ParamLoad import paramLoad
 
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
+config = paramLoad()
 
 def execute_ddl():
 
     conn = get_connection()
     cursor = conn.cursor()
-
+    param = config["Script"]["sql"] ;
     try:
 
-        with open("app/services/ddl.sql", "r") as file:
+        with open(param["file_path"], "r") as file:
             sql_script = file.read()
 
         statements = sql_script.split(";")

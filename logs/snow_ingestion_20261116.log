@@ -1,0 +1,477 @@
+2026-11-16 10:29:41,331 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-11-16 10:29:41,675 | INFO | snowflake.connector._common.extras | pyarrow is installed (version: 26.0.0)
+2026-11-16 10:29:41,682 | INFO | snowflake.connector._common.extras | pandas is installed (version: 2.3.3)
+2026-11-16 10:29:41,688 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-11-16 10:29:41,690 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-11-16 10:29:41,692 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-11-16 10:29:43,294 | INFO | app.services.file_load | Lecture du fichier data/raw/validations.csv
+2026-11-16 10:29:43,318 | INFO | app.services.file_load | Fichier data/raw/validations.csv chargé avec succès : 6 lignes
+2026-11-16 10:29:43,325 | INFO | app.main | Fichier validations.csv chargé avec succès. 6 lignes trouvées.
+2026-11-16 10:29:51,694 | INFO | app.services.file_load | Lecture du fichier data/raw/customers.csv
+2026-11-16 10:29:51,710 | INFO | app.services.file_load | Fichier data/raw/customers.csv chargé avec succès : 7 lignes
+2026-11-16 10:29:51,711 | INFO | app.main | Fichier customers.csv chargé avec succès. 7 lignes trouvées.
+2026-11-16 19:56:17,360 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-11-16 19:56:17,507 | INFO | snowflake.connector._common.extras | pyarrow is installed (version: 26.0.0)
+2026-11-16 19:56:17,510 | INFO | snowflake.connector._common.extras | pandas is installed (version: 2.3.3)
+2026-11-16 19:56:17,512 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-11-16 19:56:17,513 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-11-16 19:56:17,514 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-11-16 19:57:20,718 | INFO | app.main | Début du chargement des données de customers dans Snowflake.
+2026-11-16 19:57:20,733 | INFO | app.main | Fichier lu avec succès. 8 lignes détectées.
+2026-11-16 19:57:20,773 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:57:20,774 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:57:20,775 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:57:20,776 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:57:20,780 | INFO | snowflake.connector._core | outbound HTTP call method=PUT host=169.254.169.254 path=/latest/api/token
+2026-11-16 19:57:22,316 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427163166 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:57:22,414 | INFO | snowflake.connector._core | Executing sync query request_id=5374a6e0-ce93-4f0a-8013-3af95c2bace5
+2026-11-16 19:57:22,417 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:22,819 | INFO | snowflake.connector._core | Executing sync query request_id=4aacff0c-46fa-4426-9ceb-56aa778a7632
+2026-11-16 19:57:22,820 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:22,874 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:57:22,875 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:57:22,902 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:57:22,904 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:57:22,935 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:57:22,935 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:57:22,936 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:57:22,940 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:57:22,941 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:57:22,942 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:57:22,942 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:57:24,463 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427175450 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:57:24,465 | INFO | app.services.load_data | Chargement de STG_CUSTOMERS avec clé primaire
+2026-11-16 19:57:24,467 | INFO | snowflake.connector._core | Executing sync query request_id=1defa342-f7d8-4ac8-baa0-f5d771568224
+2026-11-16 19:57:24,468 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:25,433 | INFO | snowflake.connector._core | Executing sync query request_id=e9f93d85-4843-4605-8fa6-07ca4d429ec8
+2026-11-16 19:57:25,434 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:25,871 | INFO | snowflake.connector._core | Executing sync query request_id=e5ac9cbe-fcf3-40ca-b3e3-f55bc53e8f24
+2026-11-16 19:57:25,871 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:26,487 | INFO | snowflake.connector._core | Executing sync query request_id=d3af8bd5-0c45-4bcb-a872-3d34bc670da7
+2026-11-16 19:57:26,489 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:26,984 | INFO | snowflake.connector._core | Executing sync query request_id=19e629c6-12ac-4c7f-b0a8-bb2a67d8ee09
+2026-11-16 19:57:26,985 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:27,406 | INFO | snowflake.connector._core | Executing sync query request_id=ebb7e940-cb04-4541-88bd-1b829411274f
+2026-11-16 19:57:27,408 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:27,715 | INFO | snowflake.connector._core | Executing sync query request_id=fabedaee-2e38-4507-8dd2-3c53cd7203ca
+2026-11-16 19:57:27,716 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:28,249 | INFO | snowflake.connector._core | Executing sync query request_id=c5596437-b366-467d-b3d3-47bb91334667
+2026-11-16 19:57:28,249 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:28,548 | INFO | snowflake.connector._core | Executing sync query request_id=e70b402f-adea-48f5-96a5-249d9f8e741c
+2026-11-16 19:57:28,548 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:28,594 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:57:28,597 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:57:28,624 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:57:28,629 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:57:28,671 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:57:28,671 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:57:28,672 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:57:28,675 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:57:28,676 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:57:28,678 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:57:28,679 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:57:28,826 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427175454 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:57:28,832 | INFO | snowflake.connector._core | Executing sync query request_id=66cafd17-89c7-4b00-bf3f-0a868b752eaa
+2026-11-16 19:57:28,833 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:29,713 | INFO | snowflake.connector._core | Executing sync query request_id=c5901507-dab0-40e3-a763-22a70e04ae8b
+2026-11-16 19:57:29,714 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:29,759 | INFO | app.services.file_load | MERGE CUSTOMERS terminé
+2026-11-16 19:57:29,760 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:57:29,761 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:57:29,788 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:57:29,789 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:57:29,819 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:57:29,819 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:57:29,820 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:57:29,824 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:57:29,825 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:57:29,826 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:57:29,826 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:57:31,272 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427159066 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:57:31,274 | INFO | snowflake.connector._core | Executing sync query request_id=7af48b84-666c-4740-8110-f689edc6257b
+2026-11-16 19:57:31,275 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:31,667 | INFO | snowflake.connector._core | Executing sync query request_id=4a9456c2-f1fe-4bfe-a1b1-cc0a25b3e226
+2026-11-16 19:57:31,668 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:57:31,716 | INFO | app.services.file_load | Historique enregistré pour customers (8 lignes)
+2026-11-16 19:57:31,718 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:57:31,718 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:57:31,740 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:57:31,741 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:57:31,773 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:57:31,774 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:57:31,774 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:57:31,775 | INFO | app.main | Chargement terminé avec succès. 8 lignes chargées.
+2026-11-16 19:58:03,453 | INFO | app.main | Début du chargement des données de validations dans Snowflake.
+2026-11-16 19:58:03,464 | INFO | app.main | Fichier lu avec succès. 7 lignes détectées.
+2026-11-16 19:58:03,493 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:58:03,503 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:58:03,505 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:58:03,511 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:58:05,069 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427183662 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:58:05,075 | INFO | snowflake.connector._core | Executing sync query request_id=5e55d980-6269-4a26-965f-80c0bfe2fad4
+2026-11-16 19:58:05,077 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:05,415 | INFO | snowflake.connector._core | Executing sync query request_id=f8305de2-eb79-46e5-8955-8de2d9b20c62
+2026-11-16 19:58:05,417 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:05,486 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:58:05,487 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:58:05,519 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:58:05,521 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:58:05,556 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:58:05,557 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:58:05,559 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:58:05,568 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:58:05,570 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:58:05,570 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:58:05,571 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:58:07,041 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427159070 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:58:07,045 | INFO | app.services.load_data | Chargement de STG_VALIDATIONS avec clé primaire
+2026-11-16 19:58:07,049 | INFO | snowflake.connector._core | Executing sync query request_id=9e278565-4948-4e14-b85a-a3a0bf3174fb
+2026-11-16 19:58:07,050 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:07,527 | INFO | snowflake.connector._core | Executing sync query request_id=6b5c9d09-5077-407f-b667-49a6231219e5
+2026-11-16 19:58:07,529 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:07,970 | INFO | snowflake.connector._core | Executing sync query request_id=530e635a-0e55-4a1e-9f65-6308c98b9da0
+2026-11-16 19:58:07,972 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:08,368 | INFO | snowflake.connector._core | Executing sync query request_id=ed4a0691-f6bf-42f0-890b-003ce3425bce
+2026-11-16 19:58:08,369 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:08,795 | INFO | snowflake.connector._core | Executing sync query request_id=a673b54a-5fc9-41ab-866a-8702617bae92
+2026-11-16 19:58:08,797 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:09,044 | INFO | snowflake.connector._core | Executing sync query request_id=a33b76a4-4cdb-4052-a7cf-e8f28a5161f5
+2026-11-16 19:58:09,045 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:09,341 | INFO | snowflake.connector._core | Executing sync query request_id=619d0168-f84f-40f3-9e23-a7ba9a16aaad
+2026-11-16 19:58:09,342 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:09,631 | INFO | snowflake.connector._core | Executing sync query request_id=5778f65e-1b9a-4afc-942f-531d66cb2feb
+2026-11-16 19:58:09,631 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:09,683 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:58:09,684 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:58:09,710 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:58:09,711 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:58:09,747 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:58:09,748 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:58:09,750 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:58:09,760 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:58:09,763 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:58:09,764 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:58:09,766 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:58:11,303 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427187742 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:58:11,305 | INFO | snowflake.connector._core | Executing sync query request_id=c8ee3711-4438-4210-97c7-94dbc106e518
+2026-11-16 19:58:11,305 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:12,231 | INFO | snowflake.connector._core | Executing sync query request_id=84b69c3b-6a69-4b73-9a69-aee934fbceb3
+2026-11-16 19:58:12,232 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:12,284 | INFO | app.services.file_load | MERGE VALIDATIONS terminé.
+2026-11-16 19:58:12,286 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:58:12,287 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:58:12,311 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:58:12,314 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:58:12,355 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:58:12,356 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:58:12,356 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:58:12,368 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 19:58:12,369 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 19:58:12,369 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 19:58:12,370 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 19:58:12,534 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427187746 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 19:58:12,538 | INFO | snowflake.connector._core | Executing sync query request_id=044a4a25-ed53-472d-a125-2a4a09ae4ebc
+2026-11-16 19:58:12,538 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:12,924 | INFO | snowflake.connector._core | Executing sync query request_id=3934e459-f426-452e-ad26-3b6fbb77c8bb
+2026-11-16 19:58:12,925 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 19:58:12,982 | INFO | app.services.file_load | Historique enregistré pour validations (7 lignes)
+2026-11-16 19:58:12,995 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 19:58:13,001 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 19:58:13,035 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 19:58:13,038 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 19:58:13,077 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 19:58:13,078 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 19:58:13,078 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 19:58:13,079 | INFO | app.main | Chargement terminé avec succès. 7 lignes chargées.
+2026-11-16 20:00:49,101 | INFO | app.main | Début du chargement des données de customers dans Snowflake.
+2026-11-16 20:00:49,108 | INFO | app.main | Fichier lu avec succès. 20 lignes détectées.
+2026-11-16 20:00:49,117 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:00:49,121 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:00:49,123 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:00:49,125 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:00:50,786 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427163170 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:00:50,789 | INFO | snowflake.connector._core | Executing sync query request_id=199e6a4f-03fb-42d3-9601-eba8c79aa4e2
+2026-11-16 20:00:50,790 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:51,133 | INFO | snowflake.connector._core | Executing sync query request_id=90d86052-9f13-4b95-b46e-c48eafb50589
+2026-11-16 20:00:51,134 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:51,203 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:00:51,205 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:00:51,234 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:00:51,235 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:00:51,268 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:00:51,270 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:00:51,271 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:00:51,284 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:00:51,286 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:00:51,287 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:00:51,289 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:00:52,843 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427183666 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:00:52,844 | INFO | app.services.load_data | Chargement de STG_CUSTOMERS avec clé primaire
+2026-11-16 20:00:52,846 | INFO | snowflake.connector._core | Executing sync query request_id=8b8a17d7-df31-47a1-9431-b0f8b9a96af2
+2026-11-16 20:00:52,846 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:53,207 | INFO | snowflake.connector._core | Executing sync query request_id=562ff508-95fa-44ca-ad18-850fada79fff
+2026-11-16 20:00:53,208 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:53,584 | INFO | snowflake.connector._core | Executing sync query request_id=9dface83-e44f-45bd-b4f9-51c258449bee
+2026-11-16 20:00:53,584 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:53,843 | INFO | snowflake.connector._core | Executing sync query request_id=38b95731-2936-4856-8841-9170606711b7
+2026-11-16 20:00:53,843 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:54,199 | INFO | snowflake.connector._core | Executing sync query request_id=b44e49b4-9e76-48a4-84b9-ca921417a208
+2026-11-16 20:00:54,199 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:54,498 | INFO | snowflake.connector._core | Executing sync query request_id=5d7f98af-9915-4829-8c39-8cf6a60b0f36
+2026-11-16 20:00:54,499 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:54,879 | INFO | snowflake.connector._core | Executing sync query request_id=c8369975-98ad-40fb-9f84-def2fbc5b5a6
+2026-11-16 20:00:54,880 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:55,234 | INFO | snowflake.connector._core | Executing sync query request_id=cbe77b8a-07b9-4673-8c82-47f6709c203f
+2026-11-16 20:00:55,234 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:55,515 | INFO | snowflake.connector._core | Executing sync query request_id=609dcf74-f7a9-4ee1-907c-d91911e69e76
+2026-11-16 20:00:55,515 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:55,785 | INFO | snowflake.connector._core | Executing sync query request_id=84eefe97-8efa-4695-9c18-31cd0b00d151
+2026-11-16 20:00:55,786 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:56,064 | INFO | snowflake.connector._core | Executing sync query request_id=b76da539-e995-42f7-b774-7b6475133d6c
+2026-11-16 20:00:56,065 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:56,426 | INFO | snowflake.connector._core | Executing sync query request_id=2062d09a-eee5-44ed-a93c-a5e635c9f5e2
+2026-11-16 20:00:56,426 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:56,810 | INFO | snowflake.connector._core | Executing sync query request_id=6ee18385-00dd-4ac1-9353-e31d2852cdd5
+2026-11-16 20:00:56,810 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:57,142 | INFO | snowflake.connector._core | Executing sync query request_id=bad18b45-a828-4a6c-81dd-2a117dd6c410
+2026-11-16 20:00:57,143 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:57,612 | INFO | snowflake.connector._core | Executing sync query request_id=e2a5ec73-abef-43a4-a8e6-515e4c4a83b3
+2026-11-16 20:00:57,612 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:57,869 | INFO | snowflake.connector._core | Executing sync query request_id=c6d3f635-2bfb-4bac-90f1-089197a33853
+2026-11-16 20:00:57,870 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:58,161 | INFO | snowflake.connector._core | Executing sync query request_id=7bdf6d74-b79f-4cf8-98c4-6d9690aeb637
+2026-11-16 20:00:58,161 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:58,424 | INFO | snowflake.connector._core | Executing sync query request_id=2ad5f5a4-acd8-4be6-8028-b17283fcc2bf
+2026-11-16 20:00:58,426 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:58,841 | INFO | snowflake.connector._core | Executing sync query request_id=0dc6c032-df74-4340-a361-0968d7079b94
+2026-11-16 20:00:58,842 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:59,163 | INFO | snowflake.connector._core | Executing sync query request_id=fca71c99-034a-4dd1-a2e5-ef2701521b93
+2026-11-16 20:00:59,164 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:59,437 | INFO | snowflake.connector._core | Executing sync query request_id=d752fb3a-228d-4d6c-9775-5e140f3f5da2
+2026-11-16 20:00:59,438 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:00:59,487 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:00:59,487 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:00:59,513 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:00:59,514 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:00:59,553 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:00:59,553 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:00:59,553 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:00:59,558 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:00:59,559 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:00:59,559 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:00:59,559 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:01,074 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427171366 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:01,076 | INFO | snowflake.connector._core | Executing sync query request_id=3886bc18-ded1-480e-8dfc-033dc3d04e88
+2026-11-16 20:01:01,076 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:01,685 | INFO | snowflake.connector._core | Executing sync query request_id=7ceec0a6-f5d0-4cc8-bff6-e5d6d8e8baa3
+2026-11-16 20:01:01,686 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:01,739 | INFO | app.services.file_load | MERGE CUSTOMERS terminé
+2026-11-16 20:01:01,744 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:01,745 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:01,776 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:01,778 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:01,811 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:01,812 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:01,813 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:01,819 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:01:01,819 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:01:01,820 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:01:01,820 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:03,325 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427163178 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:03,327 | INFO | snowflake.connector._core | Executing sync query request_id=0d81b027-65c3-4793-afc8-c075bf70f25c
+2026-11-16 20:01:03,328 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:03,651 | INFO | snowflake.connector._core | Executing sync query request_id=a1ef18d1-fa43-4d61-a7c7-0d2bf7762165
+2026-11-16 20:01:03,652 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:03,699 | INFO | app.services.file_load | Historique enregistré pour customers (20 lignes)
+2026-11-16 20:01:03,703 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:03,704 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:03,736 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:03,738 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:03,777 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:03,777 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:03,777 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:03,778 | INFO | app.main | Chargement terminé avec succès. 20 lignes chargées.
+2026-11-16 20:01:11,903 | INFO | app.main | Début du chargement des données de validations dans Snowflake.
+2026-11-16 20:01:11,910 | INFO | app.main | Fichier lu avec succès. 20 lignes détectées.
+2026-11-16 20:01:11,921 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:01:11,923 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:01:11,926 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:01:11,928 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:13,563 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427179542 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:13,565 | INFO | snowflake.connector._core | Executing sync query request_id=97417430-b210-49be-9ea4-cea1de502942
+2026-11-16 20:01:13,565 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:13,837 | INFO | snowflake.connector._core | Executing sync query request_id=b8faae9b-3091-4712-9cfa-2181f4ed2a0a
+2026-11-16 20:01:13,838 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:13,892 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:13,894 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:13,921 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:13,929 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:13,972 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:13,980 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:13,985 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:14,007 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:01:14,013 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:01:14,016 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:01:14,018 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:15,486 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427163182 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:15,489 | INFO | app.services.load_data | Chargement de STG_VALIDATIONS avec clé primaire
+2026-11-16 20:01:15,491 | INFO | snowflake.connector._core | Executing sync query request_id=5ac6dbaf-13f3-4766-b64f-f48aad42ce51
+2026-11-16 20:01:15,492 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:15,830 | INFO | snowflake.connector._core | Executing sync query request_id=01e7899e-5d0c-4a62-b850-249bd46a09c4
+2026-11-16 20:01:15,831 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:16,072 | INFO | snowflake.connector._core | Executing sync query request_id=35ee6aea-7147-4e64-934c-1d924a3426eb
+2026-11-16 20:01:16,073 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:16,404 | INFO | snowflake.connector._core | Executing sync query request_id=801bc7ba-9775-4d0a-9f98-4da660e42fcc
+2026-11-16 20:01:16,405 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:16,721 | INFO | snowflake.connector._core | Executing sync query request_id=0412ef68-0100-4598-b12e-5b3497101d63
+2026-11-16 20:01:16,722 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:17,002 | INFO | snowflake.connector._core | Executing sync query request_id=3489206a-cc66-4f65-996a-d3ac7397f908
+2026-11-16 20:01:17,003 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:17,294 | INFO | snowflake.connector._core | Executing sync query request_id=08e167aa-ba36-471d-b07a-4015b5b8b209
+2026-11-16 20:01:17,295 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:17,604 | INFO | snowflake.connector._core | Executing sync query request_id=20c0e1b6-3c9c-4be4-9016-17a436038302
+2026-11-16 20:01:17,604 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:18,376 | INFO | snowflake.connector._core | Executing sync query request_id=30099bd2-3478-4fb8-893e-0b858a61b9e8
+2026-11-16 20:01:18,377 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:18,662 | INFO | snowflake.connector._core | Executing sync query request_id=be3f3217-1056-4a5c-9562-604f1cf2e951
+2026-11-16 20:01:18,663 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:19,117 | INFO | snowflake.connector._core | Executing sync query request_id=60e29c75-7657-4e8a-b1c6-e20a2bc0a09e
+2026-11-16 20:01:19,118 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:19,480 | INFO | snowflake.connector._core | Executing sync query request_id=af7384ae-8cd9-49d8-9369-fc4a85e48b33
+2026-11-16 20:01:19,481 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:19,746 | INFO | snowflake.connector._core | Executing sync query request_id=c140e1be-937c-479f-ac27-9aafd654dd84
+2026-11-16 20:01:19,746 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:20,033 | INFO | snowflake.connector._core | Executing sync query request_id=abeeefdc-674a-475e-add0-a367b3130adc
+2026-11-16 20:01:20,034 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:20,334 | INFO | snowflake.connector._core | Executing sync query request_id=32b05961-4522-4e8d-9762-ea5ee10c3858
+2026-11-16 20:01:20,335 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:20,620 | INFO | snowflake.connector._core | Executing sync query request_id=228802f5-a3a3-4dd6-84c6-24645137760e
+2026-11-16 20:01:20,621 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:20,869 | INFO | snowflake.connector._core | Executing sync query request_id=685a0fdd-6160-4ffc-b3a7-9e6e4e5b9d8a
+2026-11-16 20:01:20,869 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:21,179 | INFO | snowflake.connector._core | Executing sync query request_id=7ee6596a-31e4-4c41-b440-a2a3ee90faf0
+2026-11-16 20:01:21,180 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:21,446 | INFO | snowflake.connector._core | Executing sync query request_id=a5121f20-41ba-4568-9d28-5bd44d313a2d
+2026-11-16 20:01:21,446 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:21,746 | INFO | snowflake.connector._core | Executing sync query request_id=2486bb24-682e-4f6e-8482-b98adf28849c
+2026-11-16 20:01:21,748 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:22,078 | INFO | snowflake.connector._core | Executing sync query request_id=97f5f580-867d-4b06-bed1-3bec67eff239
+2026-11-16 20:01:22,078 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:22,128 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:22,128 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:22,152 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:22,154 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:22,183 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:22,183 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:22,184 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:22,195 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:01:22,197 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:01:22,198 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:01:22,199 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:23,700 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427175458 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:23,702 | INFO | snowflake.connector._core | Executing sync query request_id=ed3998e7-f04c-40de-84fe-84c6341e2bf5
+2026-11-16 20:01:23,702 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:24,282 | INFO | snowflake.connector._core | Executing sync query request_id=dd22dbba-2b05-4793-9ea7-66cfa7a9b695
+2026-11-16 20:01:24,284 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:24,336 | INFO | app.services.file_load | MERGE VALIDATIONS terminé.
+2026-11-16 20:01:24,342 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:24,343 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:24,378 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:24,379 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:24,423 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:24,425 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:24,427 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:24,433 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:01:24,434 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:01:24,434 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:01:24,435 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:01:25,897 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427159078 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:01:25,900 | INFO | snowflake.connector._core | Executing sync query request_id=fa42dbca-dc97-4607-8e17-f6735a5840ee
+2026-11-16 20:01:25,901 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:26,219 | INFO | snowflake.connector._core | Executing sync query request_id=6ad8958e-c47d-4d8d-82f9-bf17662ad79f
+2026-11-16 20:01:26,220 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:01:26,274 | INFO | app.services.file_load | Historique enregistré pour validations (20 lignes)
+2026-11-16 20:01:26,276 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:01:26,276 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:01:26,300 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:01:26,301 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:01:26,336 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:01:26,336 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:01:26,337 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:01:26,340 | INFO | app.main | Chargement terminé avec succès. 20 lignes chargées.
+2026-11-16 20:04:58,746 | INFO | app.main | Début du chargement des données de customers dans Snowflake.
+2026-11-16 20:04:58,758 | INFO | app.main | Fichier lu avec succès. 4 lignes détectées.
+2026-11-16 20:04:58,775 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:04:58,778 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:04:58,779 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:04:58,783 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:05:00,353 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427159082 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:05:00,358 | INFO | snowflake.connector._core | Executing sync query request_id=4aebeedb-d574-457a-9efb-085b7f6709b1
+2026-11-16 20:05:00,359 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:00,657 | INFO | snowflake.connector._core | Executing sync query request_id=2b72abac-6dc4-4a04-9a90-14c5aeec0044
+2026-11-16 20:05:00,658 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:00,717 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:05:00,718 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:05:00,742 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:05:00,744 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:05:00,780 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:05:00,781 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:05:00,782 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:05:00,791 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:05:00,793 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:05:00,795 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:05:00,796 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:05:02,255 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427163186 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:05:02,259 | INFO | app.services.load_data | Chargement de STG_CUSTOMERS avec clé primaire
+2026-11-16 20:05:02,263 | INFO | snowflake.connector._core | Executing sync query request_id=719acff1-2bff-4716-9d22-bc2422468b4b
+2026-11-16 20:05:02,264 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:02,674 | INFO | snowflake.connector._core | Executing sync query request_id=be7c3242-1dd4-4249-9ea6-6aebe0f74164
+2026-11-16 20:05:02,675 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:03,049 | INFO | snowflake.connector._core | Executing sync query request_id=f8393668-173b-443c-8f47-386d3c35331d
+2026-11-16 20:05:03,051 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:03,375 | INFO | snowflake.connector._core | Executing sync query request_id=69dac27a-e72a-47a7-9ee9-052892bdb646
+2026-11-16 20:05:03,376 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:03,752 | INFO | snowflake.connector._core | Executing sync query request_id=ecebe768-bac0-4aa9-a67e-a147cfd68ca1
+2026-11-16 20:05:03,753 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:03,807 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:05:03,808 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:05:03,839 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:05:03,850 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:05:03,900 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:05:03,906 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:05:03,910 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:05:03,923 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:05:03,927 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:05:03,929 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:05:03,933 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:05:05,481 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427175462 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:05:05,483 | INFO | snowflake.connector._core | Executing sync query request_id=5c533efb-5d11-4052-a3a0-02b78f6bc40c
+2026-11-16 20:05:05,484 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:06,125 | INFO | snowflake.connector._core | Executing sync query request_id=0d3a12a2-647d-4450-81fb-c0a264545fda
+2026-11-16 20:05:06,126 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:06,185 | INFO | app.services.file_load | MERGE CUSTOMERS terminé
+2026-11-16 20:05:06,189 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:05:06,192 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:05:06,225 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:05:06,226 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:05:06,264 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:05:06,266 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:05:06,269 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:05:06,289 | WARNING | snowflake.connector._core | Proxy configuration: using environment variable proxy settings
+2026-11-16 20:05:06,294 | INFO | snowflake.connector._core | Starting Snowflake login process
+2026-11-16 20:05:06,295 | INFO | snowflake.connector._core | Making Snowflake login request login_url=https://URETLZX-ZU76100.snowflakecomputing.com/session/v1/login-request
+2026-11-16 20:05:06,297 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session/v1/login-request attempt=1
+2026-11-16 20:05:07,775 | INFO | snowflake.connector._core | Snowflake login completed successfully session_id=835637427179546 session_validity_secs=3599 master_validity_secs=14399 session_params_count=52 server_version=10.42.101
+2026-11-16 20:05:07,778 | INFO | snowflake.connector._core | Executing sync query request_id=eb657343-3dff-454f-b68e-3aff67e7b992
+2026-11-16 20:05:07,779 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:08,110 | INFO | snowflake.connector._core | Executing sync query request_id=0189f8c6-4ccc-4359-af95-dd4d1b8915b4
+2026-11-16 20:05:08,111 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/queries/v1/query-request attempt=1
+2026-11-16 20:05:08,165 | INFO | app.services.file_load | Historique enregistré pour customers (4 lignes)
+2026-11-16 20:05:08,168 | INFO | snowflake.connector._core | Closing connection
+2026-11-16 20:05:08,169 | INFO | snowflake.connector._core | Sending logout: auto-detection found no running async queries
+2026-11-16 20:05:08,200 | INFO | snowflake.connector._core | Initiating session logout
+2026-11-16 20:05:08,201 | INFO | snowflake.connector._core | outbound HTTP call method=POST path=/session attempt=1
+2026-11-16 20:05:08,238 | INFO | snowflake.connector._core | Session logout completed successfully
+2026-11-16 20:05:08,239 | INFO | snowflake.connector._core | Logout completed successfully
+2026-11-16 20:05:08,240 | INFO | snowflake.connector._core | Connection closed successfully
+2026-11-16 20:05:08,242 | INFO | app.main | Chargement terminé avec succès. 4 lignes chargées.

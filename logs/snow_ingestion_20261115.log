@@ -1,0 +1,18 @@
+2026-11-15 16:24:12,141 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-11-15 16:24:12,252 | INFO | snowflake.connector._common.extras | pyarrow is installed (version: 26.0.0)
+2026-11-15 16:24:12,254 | INFO | snowflake.connector._common.extras | pandas is installed (version: 2.3.3)
+2026-11-15 16:24:12,256 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-11-15 16:24:12,256 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-11-15 16:24:12,257 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-11-15 16:26:22,204 | INFO | snowflake.connector | Python connector starting v5.1.0
+2026-11-15 16:26:22,270 | INFO | snowflake.connector._common.extras | pyarrow is installed (version: 26.0.0)
+2026-11-15 16:26:22,271 | INFO | snowflake.connector._common.extras | pandas is installed (version: 2.3.3)
+2026-11-15 16:26:22,274 | INFO | snowflake.connector._common.extras | numpy is installed (version: 2.5.4)
+2026-11-15 16:26:22,275 | INFO | snowflake.connector._common.extras | tzlocal is not installed; tzlocal-based features will be unavailable
+2026-11-15 16:26:22,276 | INFO | snowflake.connector._common.extras | sqlalchemy is not installed; sqlalchemy-based features will be unavailable
+2026-11-15 16:26:24,674 | INFO | app.services.file_load | Lecture du fichier data/raw/customers.csv
+2026-11-15 16:26:24,680 | INFO | app.services.file_load | Fichier data/raw/customers.csv chargé avec succès : 7 lignes
+2026-11-15 16:26:24,681 | INFO | app.main | Fichier customers.csv chargé avec succès. 7 lignes trouvées.
+2026-11-15 16:26:38,368 | INFO | app.services.file_load | Lecture du fichier data/raw/validations.csv
+2026-11-15 16:26:38,372 | INFO | app.services.file_load | Fichier data/raw/validations.csv chargé avec succès : 6 lignes
+2026-11-15 16:26:38,372 | INFO | app.main | Fichier validations.csv chargé avec succès. 6 lignes trouvées.
